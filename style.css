@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+.container {
+    grid-template-areas: 
+    "a a a"
+    "b b c";
+    width: 90vw;
+    height: 90vw;
+    margin: 5% auto 0;
+    display: grid;
+}
+
+.images {
+    grid-area: a;
+    display: flex;
+    
+
+}
+
+.text {
+    grid-area: b;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+}
+
+.buttons {
+    grid-area: c;
+    display: flex;
+    gap: 0.35rem;
+    justify-content: flex-end;
+}
+
+img {
+    display: none;
+    margin: 0 auto;
+}
+
+img.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+span {
+    display: none;
+}
+span.active {
+    display: block;
+}
+input {
+    display: none;
+}
+
+.btn {
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 1rem;
+border: 0.2rem solid white;
+}
